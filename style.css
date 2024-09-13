@@ -12,34 +12,34 @@ body {
     align-items: center; /* Centers vertically */
     justify-content: center;
     min-height: 100vh;
-    padding: 0px 10px;
+    padding: 0 0.625rem; /* 10px to rem */
 }
   
 .container {
     max-width: 60%;
     margin-inline: auto;
     background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem; /* 10px to rem */
+    box-shadow: 0 0.03125rem 0.0625rem rgba(0, 0, 0, 0.1); /* 0.5rem and 1rem to rem */
 }
 
 .container_top {
-    padding: 0px 30px;
+    padding: 0 1.875rem; /* 30px to rem */
 }
 
 .container_top h1 {
     color: hsl(179, 62%, 43%);
-    padding: 30px 10px;
+    padding: 1.875rem 0.625rem; /* 30px and 10px to rem */
 }
 
 .container_top h3 {
     color: hsl(71, 73%, 54%);
-    padding: 0px 10px;
+    padding: 0 0.625rem; /* 10px to rem */
 }
 
 .container_top p {
     color: hsl(218, 22%, 67%);
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem; /* 20px and 10px to rem */
 }
 
 .container_bottom {
@@ -50,7 +50,7 @@ body {
 .container_bottom--left,
 .container_bottom--right {
     flex: 1; /* Both elements will take equal space */
-    padding: 30px 40px; /* Optional: Add some padding if needed */
+    padding: 1.875rem 2.5rem; /* 30px and 40px to rem */
 }
 
 .container_bottom--left {
@@ -58,36 +58,36 @@ body {
 }
 
 .container_bottom--left p {
-    padding: 10px 0px;
+    padding: 0.625rem 0; /* 10px to rem */
 }
 
 .PRICE {
     display: flex;
-    padding-top: 10px;
+    padding-top: 0.625rem; /* 10px to rem */
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem; /* 20px to rem */
 }
 
 .price {
     color: white;
-    font-size: 2rem;
+    font-size: 1.25rem; /* 20px to rem */
     font-weight: bold;
 }
 
 button {
-    min-width: 200px;
-    padding: 15px;
+    min-width: 12.5rem; /* 200px to rem */
+    padding: 0.9375rem; /* 15px to rem */
     display: inline-block;
     text-align: center;
     font-weight: bold;
     background-color: hsl(71, 73%, 54%);
     color: hsl(0, 0%, 100%);
     font-family: 'Karla';
-    font-size: medium;
+    font-size: medium; /* Medium remains as is */
     font-weight: 700;
     border: 0;
-    border-radius: 5px;
-    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.3125rem; /* 5px to rem */
+    box-shadow: 0 0.03125rem 0.0625rem rgba(0, 0, 0, 0.1); /* 0.5rem and 1rem to rem */
 }
 
 .container_bottom--right {
@@ -95,26 +95,25 @@ button {
 }
 
 .container_bottom--right h3 {
-    padding: 0px 0px;
+    padding: 0 0; /* No change */
 }
 
 .container_bottom--right p {
     font-family: 'Karla';
     color: hsl(204, 43%, 93%);
     line-height: 1.2;
-    padding-top: 10px;
+    padding-top: 0.625rem; /* 10px to rem */
 }
 
 footer {
     position: absolute;
-    bottom: 20px; /* Adjust as needed */
+    bottom: 1.25rem; /* 20px to rem */
     width: 100%;
     text-align: center;
     color: hsl(203, 12%, 22%);
-    bottom: 0%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) { /* 768px to rem */
     .container_bottom {
         flex-direction: column; /* Stack items vertically */
     }
@@ -123,7 +122,6 @@ footer {
         max-width: 95%; /* Adjust width for smaller screens */
     }
     .footer {
-        
-        margin-top: 2rem; /* Ensure enough space above footer */
+        margin-top: 1.25rem; /* 20px to rem */
     }
 }
