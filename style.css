@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Karla', sans-serif;
+    color: hsl(204, 43%, 93%);
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    align-items: center; /* Centers vertically */
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0px 10px;
+}
+  
+.container {
+    max-width: 60%;
+    margin-inline: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.container_top {
+    padding: 0px 30px;
+}
+
+.container_top h1 {
+    color: hsl(179, 62%, 43%);
+    padding: 30px 10px;
+}
+
+.container_top h3 {
+    color: hsl(71, 73%, 54%);
+    padding: 0px 10px;
+}
+
+.container_top p {
+    color: hsl(218, 22%, 67%);
+    padding: 20px 10px;
+}
+
+.container_bottom {
+    display: flex;
+    background-color: aqua;
+}
+
+.container_bottom--left,
+.container_bottom--right {
+    flex: 1; /* Both elements will take equal space */
+    padding: 30px 40px; /* Optional: Add some padding if needed */
+}
+
+.container_bottom--left {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.container_bottom--left p {
+    padding: 10px 0px;
+}
+
+.PRICE {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    gap: 20px;
+}
+
+.price {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+button {
+    min-width: 200px;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Karla';
+    font-size: medium;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.container_bottom--right {
+    background-color: hsl(179, 58%, 49%);
+}
+
+.container_bottom--right h3 {
+    padding: 0px 0px;
+}
+
+.container_bottom--right p {
+    font-family: 'Karla';
+    color: hsl(204, 43%, 93%);
+    line-height: 1.2;
+    padding-top: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    width: 100%;
+    text-align: center;
+    color: hsl(203, 12%, 22%);
+    bottom: 0%;
+}
+
+@media (max-width: 768px) {
+    .container_bottom {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .container {
+        max-width: 95%; /* Adjust width for smaller screens */
+    }
+    .footer {
+        
+        margin-top: 2rem; /* Ensure enough space above footer */
+    }
+}
